@@ -4,14 +4,14 @@
     <!-- Meta Header section ---
      Ensures there are no issues with character's displaying correctly.
      Makes the site mobile friendly, gives a description of the page and states the page author. 
-     Restricts search engines from indexing the page and following any links on it (since i dont want it on a search engine).
+     Allows search engines to index the page and follow any links on it.
      Restricts loading any content that is not from the local domain for security purposes, such as preventing XSS attacks.
      -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="A simple HTML-only website about a Book Club">
     <meta name="author" content="Foteini A. A." />
-    <meta name="robots" content="noindex, nofollow">
+    <meta name="robots" content="index, follow">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
     
     <title>Pints & Pages - Book Club - Contact us</title> 
@@ -21,7 +21,7 @@
 <body>
     <!--Common Header section: load page banner, title and navigation section  -->
     <header>
-        <img src="./images/banner.png" alt="Banner Image - Pastel Green" width="1870" height="100">
+        <img src="./images/banner.png" alt="Banner Image - Pastel Green" width="100%" height="100">
         <br>
         <h1>Pints & Pages </h1>
         <nav>
@@ -31,7 +31,7 @@
             <a href="./contact.html">Contact</a>
         </p>
         </nav>
-        <p><img src="./images/back.jpg" alt="Banner Image of book" width="666" height="290" ></p><br>
+        <p><img src="./images/back.jpg" alt="Banner Image of book" width="40%" ></p><br>
     </header>
 
     <main>
@@ -105,7 +105,7 @@
     <!--Common Footer Section: Copyright and banner image-->
     <footer>
         <p>&copy; Pints & Pages 2025</p>
-        <img src="./images/banner.png" alt="Banner Image - Pastel Green" width="1870" height="100">
+        <img src="./images/banner.png" alt="Banner Image - Pastel Green" width="100% height="100">
     </footer>
 
 
