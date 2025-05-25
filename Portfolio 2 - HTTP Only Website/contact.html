@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Meta Header section ---
+     Ensures there are no issues with character's displaying correctly.
+     Makes the site mobile friendly, gives a description of the page and states the page author. 
+     Restricts search engines from indexing the page and following any links on it (since i dont want it on a search engine).
+     Restricts loading any content that is not from the local domain for security purposes, such as preventing XSS attacks.
+     -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A simple HTML-only website about a Book Club">
+    <meta name="author" content="Foteini A. A." />
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+    
+    <title>Pints & Pages - Book Club - Contact us</title> 
+</head>
+ 
+
+<body>
+    <!--Common Header section: load page banner, title and navigation section  -->
+    <header>
+        <img src="./images/banner.png" alt="Banner Image - Pastel Green" width="1870" height="100">
+        <br>
+        <h1>Pints & Pages </h1>
+        <nav>
+        <p>
+            <a href="./index.html">Home</a> |
+            <a href="./about.html">About Us</a> |
+            <a href="./contact.html">Contact</a>
+        </p>
+        </nav>
+        <p><img src="./images/back.jpg" alt="Banner Image of book" width="666" height="290" ></p><br>
+    </header>
+
+    <main>
+        <!--Main Section - Contact us section with various form types (text, radio, checkbox, message) to fill in personal information, select book preferences, additional info and a comment section. 
+        Includes a submit or clear form button at the end.-->
+
+        <h2>Contact Us / Join the Club</h2>
+        <p>Please fill out the form below to sign up for Pints & Pages Club or send us a message.</p>
+
+        <form action="#PHPFILEHERE" method="post"> 
+            <fieldset>
+                <legend><strong>Personal Information</strong></legend>
+                <p>
+                    <label for="fname">First Name:</label><br>
+                    <input type="text" id="fname" name="fname" required>
+                </p>
+                <p>
+                    <label for="lname">Last Name:</label><br>
+                    <input type="text" id="lname" name="lname" required>
+                </p>
+                <p>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend><strong>Preferences</strong></legend>
+                <p>
+                    <label for="genre">Favorite Genre:</label><br>
+                    <select id="genre" name="genre">
+                        <option value="fantasy">Fantasy</option>
+                        <option value="sci-fi">Science Fiction</option>
+                        <option value="romance">Romance</option>
+                        <option value="non-fiction">Non-fiction</option>
+                        <option value="mystery">Mystery</option>
+                    </select>
+                </p>
+
+                <p>Would you like to receive our newsletter?</p>
+                <input type="radio" id="yes" name="newsletter" value="yes" checked>
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="no" name="newsletter" value="no">
+                <label for="no">No</label>
+            </fieldset>
+
+            <fieldset>
+                <legend><strong>Additional Information</strong></legend>
+                <p>How did you hear about us?</p>
+                <input type="checkbox" id="friend" name="referral" value="friend">
+                <label for="friend">Friend</label><br>
+                <input type="checkbox" id="social" name="referral" value="social">
+                <label for="social">Social Media</label><br>
+                <input type="checkbox" id="search" name="referral" value="search">
+                <label for="search">Web Search</label><br>
+
+                <p>
+                    <label for="message">Any comments or suggestions?</label><br>
+                    <textarea id="message" name="message" rows="5" cols="40" placeholder="Write your message here..."></textarea>
+                </p>
+            </fieldset>
+
+            <p>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Clear Form">
+            </p>
+        </form>
+
+    </main>
+
+    <!--Common Footer Section: Copyright and banner image-->
+    <footer>
+        <p>&copy; Pints & Pages 2025</p>
+        <img src="./images/banner.png" alt="Banner Image - Pastel Green" width="1870" height="100">
+    </footer>
+
+
+</body>
+</html>
