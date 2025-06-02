@@ -1,0 +1,194 @@
+
+/* CSS that will apply to all pages - to mitigate redundancy*/
+
+/* Reset & Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Links */
+a {
+  color: #2e8b57;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #c117df;
+}
+
+a:visited {
+  color: #171363;
+}
+
+/* Header and nav */
+.top-header {
+  position: sticky;
+  top: 0;
+  background-color: #eaf6ea;
+  padding: 20px 40px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-bottom: 2px solid #c1e1c1;
+}
+
+.site-title {
+  font-size: 28px;
+  color: #2e8b57;
+  font-weight: 700;
+}
+
+.top-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.top-nav a {
+  padding: 8px 16px;
+  background-color: #fff;
+  border: 1px solid #c1e1c1;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+/* Three-Column Layout */
+.page-layout {
+  display: flex;
+  flex: 1;
+  max-width: 100%;
+  margin: 0;
+  padding: 40px 20px;
+  
+}
+
+/* Sidebars */
+.sidebar {
+  width: 15%;
+  border-radius: 8px;
+  background-image:  url(./../images/istockphoto-1459180949-612x612.jpg);
+  background-size:130%;
+  
+}
+
+.left-sidebar {
+  
+  padding: 0px 30px;
+  
+}
+
+.right-sidebar {
+  padding-left: 30px;
+}
+
+
+/* Right Sidebar - Past Favorites section with older books covered*/
+.past-favorites {
+  float: left ;
+  
+  width: 98%;
+  background-color: #f5fff5;
+  padding: 20px;
+  border-left: 4px solid #90ee90;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.past-favorites h3 {
+  color: #2e8b57;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.past-favorites ul {
+  list-style: none;
+}
+
+.past-favorites li {
+  margin-bottom: 10px;
+}
+
+
+/* Main Content */
+.main-content {
+  width: 70%;
+  background-color: #f5eafc;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.main-content h2,h3 {
+  color: #a042da;
+}
+
+
+
+
+/* Misc Common things */
+.dashed-divider {
+  margin:10px;
+  border: 1px dashed #333;
+  
+}
+
+
+blockquote {
+  float:left;
+  margin-top: 20px;
+  background-color: #ecd5fa;
+  border-left: 5px solid #c06cf4;
+  border-radius: 6px;
+  width:50%;
+  margin:15px 25%;
+  padding: 15px 20px;
+  font-style: italic;
+  color: #444;
+  text-align: center;
+}
+
+
+
+
+/* Footer */
+footer {
+  background-color: #eaf6ea;
+  text-align: center;
+  padding: 20px;
+  border-top: 2px solid #c1e1c1;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .page-layout {
+    flex-direction: column;
+  }
+
+  .sidebar,
+  .main-content {
+    width: 100%;
+  }
+  blockquote {
+    width:70%;
+  }
+
+  .past-favorites{
+    margin-top:20px;
+  }
+
+}

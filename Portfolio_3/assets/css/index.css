@@ -1,0 +1,58 @@
+
+.book-feature {
+  display: block;
+  padding: 30px;
+}
+
+.book-image {
+  float: left;
+  width: 200px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.book-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.book-image figcaption {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 8px;
+  
+  font-style: italic;
+}
+
+.book-description p {
+  line-height: 1.6;
+  padding: 10px;
+  text-align: justify;
+}
+
+.main-content img.beer {
+  float:left;
+  width: 10%;
+  margin:15px  90%;
+}
+
+.book-description h2,h3 {
+  margin: 10px 0px;
+}
+
+
+/* For smaller screens  */
+@media (max-width: 768px) {
+
+
+  .book-feature {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .book-description {
+    padding: 10px;
+  }
+}

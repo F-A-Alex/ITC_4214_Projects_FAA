@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Meta Header section ---
+     Ensures there are no issues with character's displaying correctly.
+     Makes the site mobile friendly, gives a description of the page and states the page author. 
+     Restricts search engines from indexing the page and following any links on it (since i dont want it on a search engine).
+     Restricts loading any content that is not from the local domain or Google maps iframes for security purposes, such as preventing XSS attacks.
+     -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A simple HTML-only website about a Book Club">
+    <meta name="author" content="Foteini A. A." />
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; frame-src 'self' https://www.google.com https://www.google.com/maps;">
+
+    <link rel="stylesheet" href="./assets/css/about.css" />
+    <link rel="stylesheet" href="./assets/css/template.css" />
+
+    <title>Pints & Pages - Book Club - About us</title> 
+</head>
+ 
+
+<body>
+    <!--Common Header section: load page banner, title and navigation section  -->
+    <header class="top-header">
+        <h1 class="site-title">Pints & Pages</h1>
+        <nav class="top-nav">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        </nav>
+
+    </header>
+    <div class="page-layout">
+        <div class="sidebar left-sidebar"> <!-- empty just for css sectioning --></div>
+
+        <main class="main-content">
+            <!--Main Section - About page of the founders, their photo, mission and meeting location and time.-->
+            <div class="about-us">
+                <h2>About Us</h2>
+                    <div class="founderimg">
+                        <img src="./assets/images/founders.jpg" alt="Photo of the founders" >
+                        <figcaption><em>Paige Turner and Justin Case at the first in-person meeting, 2018.</em></figcaption>
+                    </div>
+                <p>
+                    <strong>Pints & Pages</strong> was founded in 2018 by two lifelong friends and passionate readers, <i>Paige Turner</i> and <i>Justin Case</i>. 
+                    What began as a cozy weekend reading ritual quickly blossomed into a welcoming book club for fellow literature lovers.
+                    Our goal is simple: create a warm, inclusive space where stories come alive and friendships grow page by page. 
+                    We believe every book opens a door, and every member brings something special to the conversation.
+                </p>
+                <br>    
+                
+
+                 <hr class="dashed-divider"> <br> 
+                <h3>Our Mission</h3>
+                <ul>
+                    <li>Celebrate literature from all genres and cultures</li>
+                    <li>Foster thoughtful, engaging discussions</li>
+                    <li>Support independent bookstores and authors</li>
+                    <li>Enjoy our time off with a well earned beer after a hard day's work</li>
+                </ul>
+
+                <p>
+                    Whether you're a lifelong bookworm or just getting started, we welcome you to grab a cup of tea/ale, pull up a chair, and join the story.
+                    
+                </p>
+                <blockquote><strong> We meet every Saturday at The Green Dragon Inn in Hobitton at 19:00! </strong></blockquote>
+            
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.02340258477!2d175.6785599767542!3d-37.85974283666856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6dab7f1d3279b1%3A0x75bb8d696b08ea29!2sThe%20Green%20Dragon%20Inn!5e0!3m2!1sen!2sgr!4v1748179729311!5m2!1sen!2sgr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </main>
+
+        <div class="sidebar right-sidebar">
+            <aside class="past-favorites">
+                <h3>Past Favorites</h3>
+                <ul>
+                    <li><a href="#">The Hitchhiker's Guide to the Galaxy</a></li>
+                    <li><a href="#">Pride and Prejudice</a></li>
+                    <li><a href="#">Stay where you are and then Leave</a></li>
+                </ul>
+            </aside>    
+        </div>
+    </div>
+
+
+    <!--Common Footer Section: Copyright-->
+    <footer>
+        <p>&copy; Pints & Pages 2025</p>
+    </footer>
+
+
+</body>
+
+</html>
+
+
+
